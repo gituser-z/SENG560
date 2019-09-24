@@ -1,10 +1,5 @@
 # SENG560
-<<<<<<< HEAD
 This library provides arithmetic functions.  It has been tested with JDK 11 LTS version, JUnit 5, and Eclipse IDE version 2019-06.  
-=======
-This library provides arithmetic functions.  It has been tested with JDK 11 LTS version.  
->>>>>>> branch 'master' of https://github.com/gituser-z/SENG560
-To use it import the java package "edu.wvu.seng560.arithmeticLibrary"  
 
 Use the following methods according to number system:  
 decimal (integers and floating points):  add, subtract, multiply, divide, squareRoot, power  
@@ -39,5 +34,5 @@ integer to hexadecimal: intToHex
 
 ## Reusability
 A couple of measures were taken to ensure the library was reusable:  
-1. Convenience methods are provided for ease of use even though conversion methods are already included.  The convenience methods save the library user from having to make extra calls to the conversion methods.  The convenience methods utilize the conversion methods internally.
-2. String types are used for input values in all methods.  This makes it easy for the library user since the input they are going to be collecting will most likely be from the console or a GUI box and captured into a String type and won't have to keep separate int, float, and double variables to hold different types of input values.  They can just use a String type, pass it in to this library's methods, and get the result returned as a String type also. 
+1. Convenience methods are provided for ease of use even though conversion methods are already included.  The convenience methods save the library user from having to make extra calls to the conversion methods if they need to perform arithmetic operations on binary, octal, or hexadecimal values.  They can pass in these types of values to the respective method and get back the result in the same number system.  For ex., if octal values need to be added they can be passed in to the addOct method and the result will be returned as an octal value.  The convenience methods utilize the conversion methods internally.
+2. String types are used for input values in all methods.  This makes it easy for the library user since the input they are going to be collecting will most likely be from the console or a GUI box and captured into a String type and won't have to keep separate int, float, and double variables to hold different types of numeric values.  They can just use a String type, pass it in to this library's methods, and get the result returned as a String type also. 
