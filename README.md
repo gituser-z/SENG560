@@ -1,5 +1,9 @@
 # SENG560
+<<<<<<< HEAD
 This library provides arithmetic functions.  It has been tested with JDK 11 LTS version, JUnit 5, and Eclipse IDE version 2019-06.  
+=======
+This library provides arithmetic functions.  It has been tested with JDK 11 LTS version.  
+>>>>>>> branch 'master' of https://github.com/gituser-z/SENG560
 To use it import the java package "edu.wvu.seng560.arithmeticLibrary"  
 
 Use the following methods according to number system:  
