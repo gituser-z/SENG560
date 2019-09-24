@@ -1,5 +1,5 @@
 # SENG560
-This library provides arithmetic functions.  
+This library provides arithmetic functions.  It has been tested with JDK 11 LTS version.  
 To use it import the java package "edu.wvu.seng560.arithmeticLibrary"  
 
 Use the following methods according to number system:  
@@ -13,7 +13,7 @@ For reference here they are shown for the decimal variants:
 String add(String x, String y):  returns the sum of x and y  
 String subtract(String minuend, String subtrahend):  returns the difference of minuend - subtrahend  
 String multiply(String x, String y):  returns the product of x and y  
-String divide(String dividend, String divisor):  returns the division of dividend by divisor  
+String divide(String dividend, String divisor):  returns the division of dividend by divisor.  Note that the quotient is rounded off to 5 decimal places.  
 String squareRoot(String radicand):  returns the square root of radicand  
 String power(String base, String exponent):  returns the power of base raised to the exponent  
 
@@ -32,3 +32,8 @@ hexadecimal to octal: hexToOct
 binary to hexadecimal: binToHex  
 octal to hexadecimal: octToHex  
 integer to hexadecimal: intToHex  
+
+## Reusability
+A couple of measures were taken to ensure the library was reusable:  
+1. Convenience methods are provided for ease of use even though conversion methods are already included.  The convenience methods save the library user from having to make extra calls to the conversion methods.  The convenience methods utilize the conversion methods internally.
+2. String types are used for input values in all methods.  This makes it easy for the library user since the input they are going to be collecting will most likely be from the console or a GUI box and captured into a String type and won't have to keep separate int, float, and double variables to hold different types of input values.  They can just use a String type, pass it in to this library's methods, and get the result returned as a String type also. 
