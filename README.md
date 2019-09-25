@@ -24,6 +24,10 @@ binary to integer: binToInt
 octal to integer: octToInt  
 hexadecimal to integer: hexToInt  
 
+integer to binary: intToBin  
+octal to binary: octToBin  
+hexadecimal to binary: hexToBin
+
 binary to octal: binToOct  
 integer to octal: intToOct  
 hexadecimal to octal: hexToOct  
