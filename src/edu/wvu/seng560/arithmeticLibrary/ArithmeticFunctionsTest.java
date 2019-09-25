@@ -150,6 +150,21 @@ class ArithmeticFunctionsTest {
 	}
 	
 	@Test
+	void testIntToBin() {
+		assertEquals("1001111", af.intToBin("79"));
+	}
+	
+	@Test
+	void testOctToBin() {
+		assertEquals("1001111", af.octToBin("117"));
+	}
+	
+	@Test
+	void testHexToBin() {
+		assertEquals("1001111", af.hexToBin("4F"));
+	}
+	
+	@Test
 	void testBinToOct() {
 		assertEquals("10", af.binToOct("1000"));
 	}

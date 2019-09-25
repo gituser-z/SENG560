@@ -166,12 +166,26 @@ public class ArithmeticFunctions {
 		return String.valueOf(intVal(binValue, ArithmeticFunctions.BIN_RADIX));
 	}
 	
-	public String octToInt(String octalValue) {
-		return String.valueOf(intVal(octalValue, ArithmeticFunctions.OCT_RADIX));
+	public String octToInt(String octValue) {
+		return String.valueOf(intVal(octValue, ArithmeticFunctions.OCT_RADIX));
 	}
 	
 	public String hexToInt(String hexValue) {
 		return String.valueOf(intVal(hexValue, ArithmeticFunctions.HEX_RADIX));
+	}
+	
+	// ----------- to bin -----------
+	
+	public String intToBin(String intValue) {
+		return Integer.toBinaryString(Integer.parseInt(intValue));
+	}
+	
+	public String octToBin(String octValue) {
+		return Integer.toBinaryString(Integer.parseInt(octToInt(octValue)));
+	}
+	
+	public String hexToBin(String hexValue) {
+		return Integer.toBinaryString(Integer.parseInt(hexToInt(hexValue)));
 	}
 	
 	// ----------- to oct -----------
